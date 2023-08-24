@@ -30,9 +30,8 @@ ttt_data_csv.replace(to_replace = "x", value = "-1", inplace=True)
 ttt_data_csv.to_csv("tic-tac-toe-conv.csv", index = False)
 ```
 
-|||||
-|:---:|:---:|:---:|:---:|
 |기존 데이터|o|b|x|
+|:---:|:---:|:---:|:---:|
 |대체 데이터|1|0|-1|
 
 pandas를 통해 tic-tac-toe.csv의 o, b, x를 각각 1, 0, -1로 대체한 후 저장한다.
@@ -161,12 +160,14 @@ RMSprop, learning_late = 0.01, MSE, epochs = 100에 대한 결과는 다음과 �
 
 > 출력 결과
 
-<img width="80%" src="https://github.com/woorinlee/tic-tac-toe-learning/assets/83910204/85390bbb-74c5-497b-ae2a-5a2a952e587f"/>
+|출력 내용|
+|:---:|
+|<img width="80%" src="https://github.com/woorinlee/tic-tac-toe-learning/assets/83910204/85390bbb-74c5-497b-ae2a-5a2a952e587f"/>|
 
-|||
+||정확도|
 |:---|:---:|
-|훈련 데이터 정확도|100%|
-|테스트 데이터 정확도|99.65%|
+|훈련 데이터|100%|
+|테스트 데이터|99.65%|
 
 ## 학습 결과 비교 분석
 
@@ -181,7 +182,7 @@ RMSprop, learning_late = 0.01, MSE, epochs = 100에 대한 결과는 다음과 �
 
 > 출력 결과
 
-|||
+||출력 내용|
 |:---:|:---:|
 |learning_late=0.01|<img width="80%" src="https://github.com/woorinlee/tic-tac-toe-learning/assets/83910204/85390bbb-74c5-497b-ae2a-5a2a952e587f"/>|
 |learning_late=0.1|<img width="80%" src="https://github.com/woorinlee/tic-tac-toe-learning/assets/83910204/86b7e559-993b-4bcd-b1ba-b34533eb0bb8"/>|
@@ -202,7 +203,7 @@ RMSprop, learning_late = 0.01, MSE, epochs = 100에 대한 결과는 다음과 �
 
 > 출력 결과
 
-|||
+||출력 내용|
 |:---:|:---:|
 |epochs=100|<img width="80%" src="https://github.com/woorinlee/tic-tac-toe-learning/assets/83910204/85390bbb-74c5-497b-ae2a-5a2a952e587f"/>|
 |epochs=200|<img width="80%" src="https://github.com/woorinlee/tic-tac-toe-learning/assets/83910204/8b8cb70e-42fc-4855-ab56-9216094f5f3c"/>|
@@ -225,7 +226,7 @@ RMSprop(), Adam(), SDG(), Adagrad() 최적화 알고리즘에 대한 결과를 �
 
 > 출력 결과
 
-|||
+||출력 내용|
 |:---:|:---:|
 |RMSprop()|<img width="80%" src="https://github.com/woorinlee/tic-tac-toe-learning/assets/83910204/85390bbb-74c5-497b-ae2a-5a2a952e587f"/>|
 |Adam()|<img width="80%" src="https://github.com/woorinlee/tic-tac-toe-learning/assets/83910204/e49c3114-51db-49a1-886a-ff78c62050cf"/>|
@@ -248,7 +249,7 @@ MSE, CCE 손실 함수에 대한 결과를 도출한다.
 
 > 출력 결과
 
-|||
+||출력 내용|
 |:---:|:---:|
 |MSE|<img width="80%" src="https://github.com/woorinlee/tic-tac-toe-learning/assets/83910204/85390bbb-74c5-497b-ae2a-5a2a952e587f"/>|
 |CCE|<img width="80%" src="https://github.com/woorinlee/tic-tac-toe-learning/assets/83910204/926d2d1d-c8ff-407c-a045-c72886d7bb8d"/>|
