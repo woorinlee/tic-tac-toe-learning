@@ -4,9 +4,12 @@
 
 [datasets/tic-tac-toe](https://github.com/datasets/tic-tac-toe)
 
-tic-tac-toe.csv의 삼목 게임을 tensorflow로 학습한다. 손실 함수로는 평균 제곱 
-오차(MSE), 다중 분류(categorical_crossentropy)를 사용하여 결과를 비교하도록 한다. 전체 959개의 데이터 중 70%를 학습 데이터로, 30%를 테스트 데이터로 사용하며 
-RMSprop(), Adam(), SDG(), Adagrad() 최적화 알고리즘, epoch, learning_rate, 손실 함수에 따라 달라지는 결과를 비교하도록 한다.
+tic-tac-toe.csv의 삼목 게임을 tensorflow로 학습한다.
+
+전체 959개의 데이터 중 70%를 학습 데이터로, 30%를 테스트 데이터로 사용하며 learning_rate, epoch, 최적화 알고리즘, 손실 함수에 따라 달라지는 결과를 비교하도록 한다.
+
+손실 함수로는 평균 제곱 
+오차(MSE), 다중 분류(CCE; categorical_crossentropy)를 사용하며, 최적화 알고리즘으로는 RMSprop(), Adam(), SDG(), Adagrad()를 사용한다. 
 
 ## 준비 과정
 
