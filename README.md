@@ -33,9 +33,11 @@ ttt_data_csv.replace(to_replace = "x", value = "-1", inplace=True)
 ttt_data_csv.to_csv("tic-tac-toe-conv.csv", index = False)
 ```
 
-|기존 데이터|o|b|x|
-|:---:|:---:|:---:|:---:|
-|대체 데이터|1|0|-1|
+|기존 데이터|대체 데이터|
+|:---:|:---:|
+|o|1|
+|b|0|
+|x|-1|
 
 pandas를 통해 tic-tac-toe.csv의 o, b, x를 각각 1, 0, -1로 대체한 후 저장한다.
 
@@ -161,16 +163,13 @@ RMSprop, learning_late = 0.01, MSE, epochs = 100에 대한 결과는 다음과 �
 |:---:|:---:|
 |<img width="98%" src="https://github.com/woorinlee/tic-tac-toe-learning/assets/83910204/e3102a01-b103-447e-9b38-890f6ea2fd36"/>|<img width="95%" src="https://github.com/woorinlee/tic-tac-toe-learning/assets/83910204/291a1929-14f7-4d09-9039-54f2531e643b"/>|
 
-> 출력 결과
-
 |출력 내용|
 |:---:|
 |<img width="80%" src="https://github.com/woorinlee/tic-tac-toe-learning/assets/83910204/85390bbb-74c5-497b-ae2a-5a2a952e587f"/>|
 
-||정확도|
-|:---|:---:|
-|훈련 데이터|100%|
-|테스트 데이터|99.65%|
+|훈련 데이터 정확도|테스트 데이터 정확도|
+|---:|---:|
+|100%|99.65%|
 
 ## 학습 결과 비교 분석
 
@@ -183,17 +182,15 @@ RMSprop, learning_late = 0.01, MSE, epochs = 100에 대한 결과는 다음과 �
 |learning_late=0.01|<img width="98%" src="https://github.com/woorinlee/tic-tac-toe-learning/assets/83910204/e3102a01-b103-447e-9b38-890f6ea2fd36"/>|<img width="95%" src="https://github.com/woorinlee/tic-tac-toe-learning/assets/83910204/291a1929-14f7-4d09-9039-54f2531e643b"/>|
 |learning_late=0.1|<img width="98%" src="https://github.com/woorinlee/tic-tac-toe-learning/assets/83910204/a7aa2e55-ddb5-4ad1-863d-a38a3167f475"/>|<img width="93%" src="https://github.com/woorinlee/tic-tac-toe-learning/assets/83910204/ece3a16b-6a29-4ea1-bca5-63adf337fe86"/>|
 
-> 출력 결과
-
 ||출력 내용|
-|:---:|:---:|
+|:---|:---:|
 |learning_late=0.01|<img width="80%" src="https://github.com/woorinlee/tic-tac-toe-learning/assets/83910204/85390bbb-74c5-497b-ae2a-5a2a952e587f"/>|
 |learning_late=0.1|<img width="80%" src="https://github.com/woorinlee/tic-tac-toe-learning/assets/83910204/86b7e559-993b-4bcd-b1ba-b34533eb0bb8"/>|
 
-||learning_late=0.01|learning_late=0.1|
-|:---|:---:|:---:|
-|훈련 데이터 정확도|100%|100%|
-|테스트 데이터 정확도|99.65%|98.26%|
+||훈련 데이터 정확도|테스트 데이터 정확도|
+|:---|---:|---:|
+|learning_late=0.01|100%|99.65%|
+|learning_late=0.1|100%|98.26%|
 
 ### 2. epochs
 
@@ -204,17 +201,15 @@ RMSprop, learning_late = 0.01, MSE, epochs = 100에 대한 결과는 다음과 �
 |epochs=100|<img width="98%" src="https://github.com/woorinlee/tic-tac-toe-learning/assets/83910204/e3102a01-b103-447e-9b38-890f6ea2fd36"/>|<img width="95%" src="https://github.com/woorinlee/tic-tac-toe-learning/assets/83910204/291a1929-14f7-4d09-9039-54f2531e643b"/>|
 |epochs=200|<img width="98%" src="https://github.com/woorinlee/tic-tac-toe-learning/assets/83910204/20053648-1a87-4963-b936-d074c59492c6"/>|<img width="93%" src="https://github.com/woorinlee/tic-tac-toe-learning/assets/83910204/d62ea108-6393-4a7e-a93c-33db7203d244"/>|
 
-> 출력 결과
-
 ||출력 내용|
 |:---:|:---:|
 |epochs=100|<img width="80%" src="https://github.com/woorinlee/tic-tac-toe-learning/assets/83910204/85390bbb-74c5-497b-ae2a-5a2a952e587f"/>|
 |epochs=200|<img width="80%" src="https://github.com/woorinlee/tic-tac-toe-learning/assets/83910204/8b8cb70e-42fc-4855-ab56-9216094f5f3c"/>|
 
-||epochs=100|epochs=200|
-|:---|:---:|:---:|
-|훈련 데이터 정확도|100%|100%|
-|테스트 데이터 정확도|99.65%|97.57%|
+||훈련 데이터 정확도|테스트 데이터 정확도|
+|:---|---:|---:|
+|epochs=100|100%|99.65%|
+|epochs=200|100%|97.57%|
 
 ### 3. 최적화 알고리즘
 
@@ -227,8 +222,6 @@ RMSprop(), Adam(), SDG(), Adagrad() 최적화 알고리즘에 대한 결과를 �
 |SDG()|<img width="98%" src="https://github.com/woorinlee/tic-tac-toe-learning/assets/83910204/f3ea2a2b-cb24-478e-8a0c-0d111a0452b1"/>|<img width="93%" src="https://github.com/woorinlee/tic-tac-toe-learning/assets/83910204/96bf3630-0fa1-4cac-979b-b33eef3610e0"/>|
 |Adagrad()|<img width="98%" src="https://github.com/woorinlee/tic-tac-toe-learning/assets/83910204/8996f0fe-e909-46ed-9805-6808948d5318"/>|<img width="94%" src="https://github.com/woorinlee/tic-tac-toe-learning/assets/83910204/59b90422-bb71-4424-915f-bd3c6df57932"/>|
 
-> 출력 결과
-
 ||출력 내용|
 |:---:|:---:|
 |RMSprop()|<img width="80%" src="https://github.com/woorinlee/tic-tac-toe-learning/assets/83910204/85390bbb-74c5-497b-ae2a-5a2a952e587f"/>|
@@ -236,10 +229,12 @@ RMSprop(), Adam(), SDG(), Adagrad() 최적화 알고리즘에 대한 결과를 �
 |SDG()|<img width="80%" src="https://github.com/woorinlee/tic-tac-toe-learning/assets/83910204/6f7abe96-2b1e-4643-9adf-2df74e9c7142"/>|
 |Adagrad()|<img width="80%" src="https://github.com/woorinlee/tic-tac-toe-learning/assets/83910204/9c994f4a-b317-4d9a-945e-ce463178fb74"/>|
 
-||RMSprop()|Adam()|SDG()|Adagrad()|
-|:---|:---:|:---:|:---:|:---:|
-|훈련 데이터 정확도|100%|99.85%|70%|75.07%|
-|테스트 데이터 정확도|99.65%|98.26%|67.01%|76.39%|
+||훈련 데이터 정확도|테스트 데이터 정확도|
+|:---|---:|---:|
+|RMSprop()|100%|99.65%|
+|Adam()|99.85%|98.26%|
+|SDG()|70%|67.01%|
+|Adagrad()|75.07%|76.39%|
 
 ### 4. 손실 함수
 
@@ -250,14 +245,12 @@ MSE, CCE 손실 함수에 대한 결과를 도출한다.
 |MSE|<img width="98%" src="https://github.com/woorinlee/tic-tac-toe-learning/assets/83910204/e3102a01-b103-447e-9b38-890f6ea2fd36"/>|<img width="95%" src="https://github.com/woorinlee/tic-tac-toe-learning/assets/83910204/291a1929-14f7-4d09-9039-54f2531e643b"/>|
 |CCE|<img width="98%" src="https://github.com/woorinlee/tic-tac-toe-learning/assets/83910204/f83f2b00-f86e-44bb-ac8f-a63807cdd6d3"/>|<img width="94%" src="https://github.com/woorinlee/tic-tac-toe-learning/assets/83910204/8ea9820f-e399-4a36-951f-0962f5f37692"/>|
 
-> 출력 결과
-
 ||출력 내용|
 |:---:|:---:|
 |MSE|<img width="80%" src="https://github.com/woorinlee/tic-tac-toe-learning/assets/83910204/85390bbb-74c5-497b-ae2a-5a2a952e587f"/>|
 |CCE|<img width="80%" src="https://github.com/woorinlee/tic-tac-toe-learning/assets/83910204/926d2d1d-c8ff-407c-a045-c72886d7bb8d"/>|
 
-||MSE|CCE|
-|:---|:---:|:---:|
-|훈련 데이터 정확도|100%|100%|
-|테스트 데이터 정확도|99.65%|98.61%|
+||훈련 데이터 정확도|테스트 데이터 정확도|
+|:---|---:|---:|
+|MSE|100%|99.65%|
+|CCE|100%|98.61%|
